@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.mis.mapper.PaperMapper">
+  <resultMap id="BaseResultMap" type="com.edu.mis.model.Paper">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="teacher_id" jdbcType="VARCHAR" property="teacherId" />
+    <result column="reamrk" jdbcType="VARCHAR" property="reamrk" />
+    <result column="title" jdbcType="LONGVARCHAR" property="title" />
+    <result column="filepath" jdbcType="LONGVARCHAR" property="filepath" />
+  </resultMap>
+</mapper>

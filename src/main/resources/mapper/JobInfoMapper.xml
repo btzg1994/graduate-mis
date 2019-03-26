@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.mis.mapper.JobInfoMapper">
+  <resultMap id="BaseResultMap" type="com.edu.mis.model.JobInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="attitude" jdbcType="INTEGER" property="attitude" />
+    <result column="industry" jdbcType="INTEGER" property="industry" />
+    <result column="area" jdbcType="INTEGER" property="area" />
+    <result column="salary" jdbcType="INTEGER" property="salary" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  
+  <resultMap type="com.edu.mis.entity.ColCountEntity" id="colCountEntity">
+		<result column="col" property="col" jdbcType="INTEGER" />
+		<result column="count" property="count" jdbcType="INTEGER" />
+	</resultMap>
+
+	<select id="selectCountByGroup" resultMap="colCountEntity">
+		
+		SELECT 
+			j.`${colName}` col,COUNT(j.`${colName}`) count 
+		FROM 
+			job_info j,graduate g
+		WHERE 
+			j.`id` = g.`job_info_id` 
+		<if test="instituteId != null">
+			AND 
+				g.`institute_id` = ${instituteId} 
+		</if>
+		<if test="departmentId != null">
+			AND
+				g.`department_id` = ${departmentId}
+		</if>
+		 
+		AND 
+			j.`${colName}` IS NOT NULL GROUP BY
+		j.`${colName}`;
+	</select>
+</mapper>

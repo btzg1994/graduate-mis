@@ -1,0 +1,149 @@
+[
+    {
+        "id": "1",
+        "title": "权限管理",
+        "icon": "fa-cubes",
+        "spread": true,
+        "children": [
+            {
+                "id": "11",
+                "title": "管理员管理",
+                "icon": "fa-table",
+                "url": "../page/to?target=admin"
+            },
+            {
+                "id": "12",
+                "title": "角色管理",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=role"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "院系管理",
+        "icon": "fa-cubes",
+        "spread": true,
+        "children": [
+            {
+                "id": "21",
+                "title": "学院管理",
+                "icon": "fa-table",
+                "url": "../page/to?target=xueyuan"
+            },
+            {
+                "id": "22",
+                "title": "专业管理",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=zhuanye"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "公告管理",
+        "icon": "fa-cubes",
+        "spread": true,
+        "children": [
+            {
+                "id": "31",
+                "title": "系统公告",
+                "icon": "fa-table",
+                "url": "../page/to?target=gonggao"
+            },
+            {
+                "id": "32",
+                "title": "系统新闻",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=news"
+            },
+            {
+                "id": "33",
+                "title": "系统简介",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=jianjie"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "第三方管理",
+        "icon": "fa-cubes",
+        "spread": true,
+        "children": [
+            {
+                "id": "41",
+                "title": "招聘管理",
+                "icon": "fa-table",
+                "url": "../page/to?target=zhaopin"
+            },
+            {
+                "id": "42",
+                "title": "友情链接",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=link"
+            }
+        ]
+       
+    },
+    {
+        "id": "4",
+        "title": "系统留言管理",
+        "icon": "fa-cubes",
+        "spread": true,
+        "url": "../page/to?target=liuyan"
+    },
+    {
+        "id": "5",
+        "title": "毕业生信息管理",
+        "icon": "fa-cubes",
+        "spread": true,
+        "children": [
+            {
+                "id": "51",
+                "title": "信息录入",
+                "icon": "fa-table",
+                "url": "../page/to?target=user"
+            },
+            {
+                "id": "52",
+                "title": "信息操作",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=link"
+            },
+            {
+                "id": "53",
+                "title": "优秀论文上传",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=lunwen"
+            }
+        ]
+       
+    },{
+        "id": "6",
+        "title": "教师信息管理",
+        "icon": "fa-cubes",
+        "spread": true,
+        "children": [
+            {
+                "id": "61",
+                "title": "教师信息录入",
+                "icon": "fa-table",
+                "url": "../page/to?target=teacher"
+            },
+            {
+                "id": "62",
+                "title": "教师信息查询",
+                "icon": "&#xe658;",
+                "url": "../page/to?target=teacher_search"
+            }
+        ]
+       
+    },{
+        "id": "4",
+        "title": "就业信息统计分析",
+        "icon": "fa-cubes",
+        "spread": true,
+        "url": "../page/to?target=charts"
+    }
+]
